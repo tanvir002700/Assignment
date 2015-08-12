@@ -1,0 +1,5 @@
+int main(){
+	int A,B;A=20;B=30;
+	printf("%d",A+B);
+	return 0;
+}

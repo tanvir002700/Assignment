@@ -55,14 +55,14 @@ punctuation [;|:|,]
 	strcat(PunctuationList, yytext);
 	strcat(PunctuationList, ",");
 }
-[\n] {
-	return 0;
-}
+
 
 %%
 
 int main(int argc, char **argv){
-	yyin = stdin;
+	printf("%s",argv[1]);
+	FILE *fp=fopen(argv[1],"r");
+	yyin = fp;
 	yylex();
 	printf("\n\nKeywords (%d): %s \n", TotalKeyword, KeywordList);
 	printf("Identifiers (%d): %s \n", TotalIdentifier, IdentifierList);
@@ -74,7 +74,7 @@ int main(int argc, char **argv){
 }
 
 int yywrap(void){
-	return 0;
+	return 1;
 }
 
 int yyerror(void){
