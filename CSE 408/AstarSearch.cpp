@@ -30,11 +30,13 @@ int AstarSearch(int source,int des)
     F=vint(Graph.size()+1,(1<<28));
     priority_queue<info>Q;
     Dist[source]=0;
+    F[source]=0;
     Q.push(info(source,0));
     while(!Q.empty())
     {
         info u=Q.top();
         Q.pop();
+        if(u.v==des)return u.w;
         for(int i=0;i<Graph[u.v].size();i++)
         {
             info v=Graph[u.v][i];
@@ -47,7 +49,6 @@ int AstarSearch(int source,int des)
                 Dist[v.v]=uTOv;
                 F[v.v]=f;
             }
-            if(v.v==des)return v.w;
         }
     }
     return -1;
