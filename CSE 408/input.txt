@@ -1,0 +1,25 @@
+20 23
+oraclea zerind 71
+oraclea sibiu 151
+zerind arab 75
+arab sibiu 140
+arab timisoara 118
+timisoara logoj 111
+logoj mehadia 70
+mehadia dobreta 75
+dobreta cralova 120
+sibiu rimnicuVilcea 80
+rimnicuVilcea cralova 146
+sibiu fagaras 99
+rimnicuVilcea pitesti 97
+pitesti cralova 138
+pitesti bucharest 101
+fagaras bucharest 211
+bucharest glurglu 90
+bucharest urziceni 85
+urziceni vaslui 142
+urziceni hirsova 98
+hirsova eforle 86
+vaslui lasi 92
+lasi neamt 87
+arab sibiu
