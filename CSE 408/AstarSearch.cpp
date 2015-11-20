@@ -23,7 +23,7 @@ int H(int node1,int node2)
     return abs(node1-node2);
 }
 
-int GreedyBestFirstSearch(int source,int des)
+int AstarSearch(int source,int des)
 {
     Dist=vint(Graph.size()+1,(1<<28));
     parent=vint(Graph.size()+1,-1);
@@ -91,7 +91,7 @@ int main()
 
     string source,destination;
     cin>>source>>destination;
-    int s=GreedyBestFirstSearch(City[source],City[destination]);
+    int s=AstarSearch(City[source],City[destination]);
     if(s==-1)
     {
         cout<<"Can't reach\n";
